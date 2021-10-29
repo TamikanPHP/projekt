@@ -1,0 +1,20 @@
+
+    <h1>Upravit Formulář pro pojištění: <?= $insurance['nazevPojisteni'] ?></h1>
+    <form method="post">
+    <input type="text" name="id_pojisteni" value="<?= $insurance['id_pojisteni'] ?>" />
+    <div class="col-md-auto">
+      <label for="inputName" class="form-label">Jméno</label>
+      <input type="name" class="form-control"  name="nazevPojisteni"  value="<?= $insurance['nazevPojisteni'] ?>" id="inputName">
+    </div>
+    <div class="col-md-auto">
+      <label for="inputSurname" class="form-label">Přímení</label>
+      <input type="surname" class="form-control"  name="popisPojisteni"  value="<?= $insurance['popisPojisteni'] ?>" id="inputSurname">
+    </div>
+    <div class="col-md-auto">
+      <label for="inputSurname" class="form-label">Přímení</label>
+      <input type="surname" class="form-control"  name="cena"  value="<?= $insurance['cena'] ?>" id="inputSurname">
+    </div>
+      <div class="d-flex justify-content-center my-1">
+        <button type="submit" class="btn btn-primary"></button>
+      </div>
+  </form>

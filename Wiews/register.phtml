@@ -1,0 +1,25 @@
+<section class="d-flex justify-content-center"><form method="POST">
+            <div class="col-md-auto">
+              <label for="inputName" class="form-label">Jméno</label>
+              <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo(htmlspecialchars($_POST['name']))  ?>" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-auto">
+              <label for="inputSurname" class="form-label">Přímení</label>
+              <input type="text" name="surname" value="<?php if(isset($_POST['surname'])) echo(htmlspecialchars($_POST['surname']))  ?>" class="form-control" id="inputSurname">
+            </div>
+            <div class="col-md-auto">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control"  name="cena"  value="<?php if(isset($_POST['phone'])) echo(htmlspecialchars($_POST['phone']))  ?>" id="inputEmail4">
+              </div>
+              <div class="col-md-auto">
+                <label for="inputPhone" class="form-label">Telefon</label>
+                <input type="number" name="phone" value="<?php if(isset($_POST['phone'])) echo(htmlspecialchars($_POST['phone']))  ?>"class="form-control" id="inputPhone">
+              </div>
+              <div class="d-flex justify-content-center my-1">
+                <button type="submit" class="btn btn-primary">Pojďme na to!</button>
+              </div>
+          </form></section>
+            <footer>
+                <div class="d.flex justify-content-center text-center">
+                <p class="text-muted">Staň se novým zákazníkem</p>
+                </div>

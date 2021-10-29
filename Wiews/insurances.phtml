@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">pojištění</th>
+      <th scope="col">Popis</th>
+      <th scope="col">Cena</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($insurances as $insurance) : ?>
+        <tr>
+            <td><a href="insurance/<?= $insurance['url'] ?>"><?= $insurance['nazevPojisteni'] ?></a></td>
+            <td><?= $insurance['popisPojisteni'] ?></td>
+            <td><?= $insurance['cena'] ?>Kč</td>
+        </tr>
+    <?php endforeach ?>
+  </tbody>
+</table>
